@@ -12,6 +12,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy-dev": "aws s3 sync ./build/ s3://todoapi-dev-serverlessdeploymentbucket-a0a40ga4zgq5 --region us-east-1",
+    "cache-bust-dev": "aws cloudfront create-invalidation --distribution-id E16WA9VBIAJIYZ --paths '/'",
     "test": "jest",
     "eject": "react-scripts eject"
   },
