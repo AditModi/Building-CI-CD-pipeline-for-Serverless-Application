@@ -1,5 +1,4 @@
 service: todoApi
-
 provider:
   name: aws
   runtime: nodejs10.x
